@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-1",
+    "es2015"
+  ],
+  "env": {
+    "development": {
+      "plugins": [["react-hot-loader/babel"],["transform-class-properties"],["import", [{ "libraryName": "antd" }]]]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-remove-prop-types",
+        "transform-class-properties"
+      ]
+    }
+  }
+}
