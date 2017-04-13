@@ -1,0 +1,271 @@
+@charset "utf-8";
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,html
+{
+  margin: 0rem;
+  padding: 0rem;
+}
+html
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}
+body
+{
+  color: #515151;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+a
+{
+  color:rgba(27,150,255,.8);
+  text-decoration: none;
+  strong
+  {
+    color: inherit;
+  }
+  &:hover,&:focus
+  {
+    text-decoration: underline;
+  }
+}
+h1,h2,h3,h4,h5,h6
+{
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+}
+h1
+{
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+}
+h2
+{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+//文本
+p
+{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  em
+  {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2rem;
+  }
+}
+strong
+{
+  color: #303030;
+}
+
+//列表
+ul,ol,dl
+{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  dt
+  {
+    font-weight: bold;
+  }
+  dd
+  {
+    margin-bottom: .5rem;
+  }
+}
+//分割线
+hr
+{
+  position: relative;
+  margin: 1.5rem 0rem;
+  border: 0rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+abbr
+{
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.logo img
+{
+  display: block;
+  max-width: 100%;
+  margin: 0rem 0rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+table
+{
+  
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  td,th
+  {
+    
+    border:1px solid #eee;
+  }
+}
+.list-group .list-group-item
+{
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  padding: .5rem 1rem;
+  border: 1px solid #eee;
+  background-color:rgba(255,255,255,.7);
+  color:#108ee9;
+  >a
+  {
+    color:#108ee9;
+  }
+}
+
+
+.wrap
+{
+  // 404 401page
+  .page
+  {
+    text-align: center;
+    vertical-align: middle;
+    padding: 13rem 0rem;
+    .page-title
+    {
+      color: #6495ED;
+      font-size: 16px;
+    }
+    div > a
+    {
+      background-color: orangered;
+      border: transparent;
+    }
+  }
+  .container-fluid
+  {
+    padding: 4rem 1rem 1rem;
+    .repos
+    {
+      padding: 5rem 0rem;
+    }
+    .card
+    {
+      margin-bottom: .5rem;
+    }
+    form#signin
+    {
+      padding: 13rem 0rem;
+      label
+      {
+        color: #fff;
+      }
+    }
+  } 
+  .contact-banner
+  {
+    text-align: center;
+    background-color: rgba(255,255,255,.3);
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #6495ED;
+    span
+    {
+      padding: 0rem .5rem;
+      font-size: 16px;
+    }
+    em
+    {
+      padding: 0rem .5rem;
+      font-size: 16px;
+      >a
+      {
+        color: #6495ED;
+      }
+    }
+  }
+}
+.wrap.err
+{
+  .contact-banner
+  {
+    color:rgba(0,0,0,.8);
+    em >a
+    {
+      color: orangered;
+    }
+  }
+}
+
+
+
+
+// 文章内容
+.article-content
+{
+  background-color: #fff;
+  color: #666;
+ margin-top: 10px;
+  pre
+  {
+    background-color: rgba(0,0,0,.8);
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    strong
+    {
+      color: #fff;
+    }
+  }
+}

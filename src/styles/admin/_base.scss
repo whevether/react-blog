@@ -1,0 +1,43 @@
+@charset"utf-8";
+.btn-file
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    margin-left: -1px;
+    color: #fff;
+    background-color: #108ee9;
+    border-color: #108ee9;
+    display: inline-block;
+    padding: 3px 12px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    input.file
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        text-align: right;
+        opacity: 0;
+        background: none;
+        cursor: inherit;
+        display: block;
+    }
+}
